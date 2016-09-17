@@ -1146,10 +1146,10 @@
           "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational.Design/1.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational.Design/1.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "1.0.0"
+          "Microsoft.EntityFrameworkCore.Relational": "1.0.1"
         },
         "compile": {
           "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll": {}
@@ -1172,11 +1172,11 @@
           "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Sqlite.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Sqlite.Design/1.0.0": {
+      "Microsoft.EntityFrameworkCore.Sqlite.Design/1.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational.Design": "1.0.0",
-          "Microsoft.EntityFrameworkCore.Sqlite": "1.0.0"
+          "Microsoft.EntityFrameworkCore.Relational.Design": "1.0.1",
+          "Microsoft.EntityFrameworkCore.Sqlite": "1.0.1"
         },
         "compile": {
           "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Sqlite.Design.dll": {}
@@ -1709,7 +1709,7 @@
           "lib/netstandard1.1/Microsoft.Net.Http.Headers.dll": {}
         }
       },
-      "Microsoft.NETCore.App/1.0.0": {
+      "Microsoft.NETCore.App/1.0.1": {
         "type": "package",
         "dependencies": {
           "Libuv": "1.9.0",
@@ -1717,7 +1717,7 @@
           "Microsoft.CodeAnalysis.CSharp": "1.3.0",
           "Microsoft.CodeAnalysis.VisualBasic": "1.3.0",
           "Microsoft.NETCore.DotNetHostPolicy": "1.0.1",
-          "Microsoft.NETCore.Runtime.CoreCLR": "1.0.2",
+          "Microsoft.NETCore.Runtime.CoreCLR": "1.0.4",
           "Microsoft.VisualBasic": "10.0.1",
           "NETStandard.Library": "1.6.0",
           "System.Buffers": "4.0.0",
@@ -1776,7 +1776,7 @@
           "Microsoft.NETCore.DotNetHost": "1.0.1"
         }
       },
-      "Microsoft.NETCore.Jit/1.0.2": {
+      "Microsoft.NETCore.Jit/1.0.4": {
         "type": "package"
       },
       "Microsoft.NETCore.Platforms/1.0.1": {
@@ -1788,10 +1788,10 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NETCore.Runtime.CoreCLR/1.0.2": {
+      "Microsoft.NETCore.Runtime.CoreCLR/1.0.4": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Jit": "1.0.2",
+          "Microsoft.NETCore.Jit": "1.0.4",
           "Microsoft.NETCore.Windows.ApiSets": "1.0.1"
         }
       },
@@ -1854,12 +1854,12 @@
           "lib/netstandard1.5/Microsoft.VisualStudio.Web.BrowserLink.Loader.dll": {}
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGeneration/1.0.0-preview2-final": {
+      "Microsoft.VisualStudio.Web.CodeGeneration/1.0.0-preview2-update1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.CommandLineUtils": "1.0.0",
           "Microsoft.Extensions.DependencyInjection": "1.0.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore": "1.0.0-preview2-final",
+          "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore": "1.0.0-preview2-update1",
           "System.Linq.Expressions": "4.1.0"
         },
         "compile": {
@@ -1869,13 +1869,13 @@
           "lib/netstandard1.6/Microsoft.VisualStudio.Web.CodeGeneration.dll": {}
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGeneration.Core/1.0.0-preview2-final": {
+      "Microsoft.VisualStudio.Web.CodeGeneration.Core/1.0.0-preview2-update1": {
         "type": "package",
         "dependencies": {
           "Microsoft.DotNet.Cli.Utils": "1.0.0-preview2-003121",
           "Microsoft.Extensions.CommandLineUtils": "1.0.0",
           "Microsoft.Extensions.DependencyInjection": "1.0.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Templating": "1.0.0-preview2-final",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Templating": "1.0.0-preview2-update1",
           "Newtonsoft.Json": "9.0.1",
           "System.Console": "4.0.0",
           "System.Diagnostics.Process": "4.1.0",
@@ -1888,14 +1888,14 @@
           "lib/netstandard1.6/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll": {}
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/1.0.0-preview2-final": {
+      "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/1.0.0-preview2-update1": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Hosting": "1.0.0",
           "Microsoft.AspNetCore.Server.Kestrel": "1.0.0",
           "Microsoft.EntityFrameworkCore": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Core": "1.0.0-preview2-final",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Core": "1.0.0-preview2-update1",
           "System.AppContext": "4.1.0"
         },
         "compile": {
@@ -1905,12 +1905,12 @@
           "lib/netstandard1.6/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll": {}
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGeneration.Templating/1.0.0-preview2-final": {
+      "Microsoft.VisualStudio.Web.CodeGeneration.Templating/1.0.0-preview2-update1": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Razor": "1.0.0",
           "Microsoft.CodeAnalysis.CSharp": "1.3.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Utils": "1.0.0-preview2-final"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Utils": "1.0.0-preview2-update1"
         },
         "compile": {
           "lib/netstandard1.6/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll": {}
@@ -1919,11 +1919,11 @@
           "lib/netstandard1.6/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll": {}
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGeneration.Tools/1.0.0-preview2-final": {
+      "Microsoft.VisualStudio.Web.CodeGeneration.Tools/1.0.0-preview2-update1": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.App": "1.0.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration": "1.0.0-preview2-final"
+          "Microsoft.VisualStudio.Web.CodeGeneration": "1.0.0-preview2-update1"
         },
         "compile": {
           "lib/netcoreapp1.0/dotnet-aspnet-codegenerator.dll": {}
@@ -1932,7 +1932,7 @@
           "lib/netcoreapp1.0/dotnet-aspnet-codegenerator.dll": {}
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGeneration.Utils/1.0.0-preview2-final": {
+      "Microsoft.VisualStudio.Web.CodeGeneration.Utils/1.0.0-preview2-update1": {
         "type": "package",
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "1.3.0",
@@ -1949,10 +1949,10 @@
           "lib/netstandard1.6/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll": {}
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/1.0.0-preview2-final": {
+      "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/1.0.0-preview2-update1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.VisualStudio.Web.CodeGeneration": "1.0.0-preview2-final"
+          "Microsoft.VisualStudio.Web.CodeGeneration": "1.0.0-preview2-update1"
         },
         "compile": {
           "lib/netstandard1.6/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll": {}
@@ -5335,12 +5335,12 @@
         "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.xml"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Relational.Design/1.0.0": {
-      "sha512": "pw4EmGTp5U645is0Lyf0C6yU1uQGHVIZiRyxlDNNrRllL0ZjSFKTShv9qbE+fBpvvvArNp2HhDmP7d6vJAt0Dw==",
+    "Microsoft.EntityFrameworkCore.Relational.Design/1.0.1": {
+      "sha512": "GBN8QmrqcQo4WB4rKsPfzVaVKeHN6GSRF+eOTZWqK1vJ7T5kpG4PtxOkqOw8aZDRJbehAleD+dHYBOkngFzafA==",
       "type": "package",
-      "path": "Microsoft.EntityFrameworkCore.Relational.Design/1.0.0",
+      "path": "Microsoft.EntityFrameworkCore.Relational.Design/1.0.1",
       "files": [
-        "Microsoft.EntityFrameworkCore.Relational.Design.1.0.0.nupkg.sha512",
+        "Microsoft.EntityFrameworkCore.Relational.Design.1.0.1.nupkg.sha512",
         "Microsoft.EntityFrameworkCore.Relational.Design.nuspec",
         "lib/net451/Microsoft.EntityFrameworkCore.Relational.Design.dll",
         "lib/net451/Microsoft.EntityFrameworkCore.Relational.Design.xml",
@@ -5361,12 +5361,12 @@
         "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Sqlite.xml"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Sqlite.Design/1.0.0": {
-      "sha512": "ji4xcWCeHoM+aOeY6r82K6rHAlya5KE1c9tV8pjyaESnnkOW3ASOcUWBpte9DYqCaa0sEhNzC5uLwgjHa7SDRw==",
+    "Microsoft.EntityFrameworkCore.Sqlite.Design/1.0.1": {
+      "sha512": "3qP+8YtXuZ71cCLXRbThsaLxDAbU4wlOul0VlZKG3rSYshF2yxGGZoOJkzAxxInesDr5WfwiGp49ye1E4DAshA==",
       "type": "package",
-      "path": "Microsoft.EntityFrameworkCore.Sqlite.Design/1.0.0",
+      "path": "Microsoft.EntityFrameworkCore.Sqlite.Design/1.0.1",
       "files": [
-        "Microsoft.EntityFrameworkCore.Sqlite.Design.1.0.0.nupkg.sha512",
+        "Microsoft.EntityFrameworkCore.Sqlite.Design.1.0.1.nupkg.sha512",
         "Microsoft.EntityFrameworkCore.Sqlite.Design.nuspec",
         "lib/net451/Microsoft.EntityFrameworkCore.Sqlite.Design.dll",
         "lib/net451/Microsoft.EntityFrameworkCore.Sqlite.Design.xml",
@@ -5788,12 +5788,12 @@
         "lib/netstandard1.1/Microsoft.Net.Http.Headers.xml"
       ]
     },
-    "Microsoft.NETCore.App/1.0.0": {
-      "sha512": "ciFk0rrxHVAPs9dPj2qH6uwzkobZI9jvodZwzvyVZAjCK4V8+7zgocSmIqh1KR5M2Wl3FQcBjd2J8Jys4VkXkw==",
+    "Microsoft.NETCore.App/1.0.1": {
+      "sha512": "1ZiTaAAc3Msi4siXtdVmallNCrFA5ZUzoGkIh4litHjBJBZcRgWvwRXT60woB5FpWPC9qDiTFc6L1Gr8EbOPog==",
       "type": "package",
-      "path": "Microsoft.NETCore.App/1.0.0",
+      "path": "Microsoft.NETCore.App/1.0.1",
       "files": [
-        "Microsoft.NETCore.App.1.0.0.nupkg.sha512",
+        "Microsoft.NETCore.App.1.0.1.nupkg.sha512",
         "Microsoft.NETCore.App.nuspec",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
@@ -5836,12 +5836,12 @@
         "runtime.json"
       ]
     },
-    "Microsoft.NETCore.Jit/1.0.2": {
-      "sha512": "AwguLIwtGkS4daOThAdVjXZPIPwIHA4SxBIO/uFrW4Rtwn747zjkhx7KBR0bhHNf3sS2XAVAKO9fqc0vRtVWLA==",
+    "Microsoft.NETCore.Jit/1.0.4": {
+      "sha512": "s336ryZlopR+pQ4VfKlILX1LxiQzpCPnmiGot0p5aFPeCjwmKtHC88MI8jXdvdGPySON9i1bPUKJP8jiiPIAjA==",
       "type": "package",
-      "path": "Microsoft.NETCore.Jit/1.0.2",
+      "path": "Microsoft.NETCore.Jit/1.0.4",
       "files": [
-        "Microsoft.NETCore.Jit.1.0.2.nupkg.sha512",
+        "Microsoft.NETCore.Jit.1.0.4.nupkg.sha512",
         "Microsoft.NETCore.Jit.nuspec",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
@@ -5861,12 +5861,12 @@
         "runtime.json"
       ]
     },
-    "Microsoft.NETCore.Runtime.CoreCLR/1.0.2": {
-      "sha512": "Raxcbr24kCsVX5+MhZAXKkjFzq16aN/9zQWDi8rVFKK5uqBeSO2VGs7vzTl6e7j4acPi7JEBtYMrQpOtXCbbXA==",
+    "Microsoft.NETCore.Runtime.CoreCLR/1.0.4": {
+      "sha512": "NTd+F7MQJi5wFh6Hq3uVH0L3om+pVcfF+bpw0hSd+Ka92QSZ4IfDJw/IWqTQ9jUtLyWYR4XR+52HD5HW+a+zoQ==",
       "type": "package",
-      "path": "Microsoft.NETCore.Runtime.CoreCLR/1.0.2",
+      "path": "Microsoft.NETCore.Runtime.CoreCLR/1.0.4",
       "files": [
-        "Microsoft.NETCore.Runtime.CoreCLR.1.0.2.nupkg.sha512",
+        "Microsoft.NETCore.Runtime.CoreCLR.1.0.4.nupkg.sha512",
         "Microsoft.NETCore.Runtime.CoreCLR.nuspec",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
@@ -5954,12 +5954,12 @@
         "lib/netstandard1.5/Microsoft.VisualStudio.Web.BrowserLink.Loader.xml"
       ]
     },
-    "Microsoft.VisualStudio.Web.CodeGeneration/1.0.0-preview2-final": {
-      "sha512": "WmQR9kFKvbN0sdLhm1nJ3cXHC7ftkkYhBHkWFG2pxBA2g4aITu6//rBbZaruTrUouafjg+V+YTHdx334jVbu1g==",
+    "Microsoft.VisualStudio.Web.CodeGeneration/1.0.0-preview2-update1": {
+      "sha512": "0iPHysOIFC6os9hSzD5W9/0rmaY/2wQzt9C07zklCVJbkFpiS7Mtqi19F8QUAxPAM6KX1FVTEsEJaz/gtUwa9g==",
       "type": "package",
-      "path": "Microsoft.VisualStudio.Web.CodeGeneration/1.0.0-preview2-final",
+      "path": "Microsoft.VisualStudio.Web.CodeGeneration/1.0.0-preview2-update1",
       "files": [
-        "Microsoft.VisualStudio.Web.CodeGeneration.1.0.0-preview2-final.nupkg.sha512",
+        "Microsoft.VisualStudio.Web.CodeGeneration.1.0.0-preview2-update1.nupkg.sha512",
         "Microsoft.VisualStudio.Web.CodeGeneration.nuspec",
         "lib/net451/Microsoft.VisualStudio.Web.CodeGeneration.dll",
         "lib/net451/Microsoft.VisualStudio.Web.CodeGeneration.xml",
@@ -5967,12 +5967,12 @@
         "lib/netstandard1.6/Microsoft.VisualStudio.Web.CodeGeneration.xml"
       ]
     },
-    "Microsoft.VisualStudio.Web.CodeGeneration.Core/1.0.0-preview2-final": {
-      "sha512": "zECd6a+ZKVIIyZ/Nm7uP0NpZ0pOBs1jfQx+qiZYplNOJJC3R23/PGfdMvvX4B2beNxY6OAw0VkvRqxozQYId2g==",
+    "Microsoft.VisualStudio.Web.CodeGeneration.Core/1.0.0-preview2-update1": {
+      "sha512": "nNy2macZ0V7I1+gfcfh32rBcJ/8cEyFTBvBnxiorG3V+ItFMzYVnFb+L9I8CPVSDfrTfK+T4NZgm6MmtjD9PTQ==",
       "type": "package",
-      "path": "Microsoft.VisualStudio.Web.CodeGeneration.Core/1.0.0-preview2-final",
+      "path": "Microsoft.VisualStudio.Web.CodeGeneration.Core/1.0.0-preview2-update1",
       "files": [
-        "Microsoft.VisualStudio.Web.CodeGeneration.Core.1.0.0-preview2-final.nupkg.sha512",
+        "Microsoft.VisualStudio.Web.CodeGeneration.Core.1.0.0-preview2-update1.nupkg.sha512",
         "Microsoft.VisualStudio.Web.CodeGeneration.Core.nuspec",
         "lib/net451/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll",
         "lib/net451/Microsoft.VisualStudio.Web.CodeGeneration.Core.xml",
@@ -5980,12 +5980,12 @@
         "lib/netstandard1.6/Microsoft.VisualStudio.Web.CodeGeneration.Core.xml"
       ]
     },
-    "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/1.0.0-preview2-final": {
-      "sha512": "UDq8EM9syllYFfJXgMYcdRVaq1iVGgG7HfrPOV9KQGzF13XFygVvAqmJGCCoWeDoxSBuhox3Vh0XK9NcWo6hZw==",
+    "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/1.0.0-preview2-update1": {
+      "sha512": "IV0RPHnK0xzygQtxBINkXwg1YyGv0sTTFbVS+SbyifHm8lk8S/4J8IVDqx+GunjiNWwE3Y5K15PSgjjb/TfKbw==",
       "type": "package",
-      "path": "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/1.0.0-preview2-final",
+      "path": "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/1.0.0-preview2-update1",
       "files": [
-        "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.1.0.0-preview2-final.nupkg.sha512",
+        "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.1.0.0-preview2-update1.nupkg.sha512",
         "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.nuspec",
         "Templates/DbContext/NewLocalDbContext.cshtml",
         "lib/net451/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll",
@@ -5994,12 +5994,12 @@
         "lib/netstandard1.6/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.xml"
       ]
     },
-    "Microsoft.VisualStudio.Web.CodeGeneration.Templating/1.0.0-preview2-final": {
-      "sha512": "FjChh/YE6gm1pKXKsCbxWlmHO8CKTXn7CUUOSeNrF1+Iz/qST+CzbsZvBv/FaEk4162I3T5VMVTgCa2haitMZw==",
+    "Microsoft.VisualStudio.Web.CodeGeneration.Templating/1.0.0-preview2-update1": {
+      "sha512": "McQoYnMe0OGMqfjg+AY5ivSwMG0yqkLhhshMvoVcKEcbapaeKEy1McSFUqZBG0yy/jmLembTdf3kwlYNofOMsw==",
       "type": "package",
-      "path": "Microsoft.VisualStudio.Web.CodeGeneration.Templating/1.0.0-preview2-final",
+      "path": "Microsoft.VisualStudio.Web.CodeGeneration.Templating/1.0.0-preview2-update1",
       "files": [
-        "Microsoft.VisualStudio.Web.CodeGeneration.Templating.1.0.0-preview2-final.nupkg.sha512",
+        "Microsoft.VisualStudio.Web.CodeGeneration.Templating.1.0.0-preview2-update1.nupkg.sha512",
         "Microsoft.VisualStudio.Web.CodeGeneration.Templating.nuspec",
         "lib/net451/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll",
         "lib/net451/Microsoft.VisualStudio.Web.CodeGeneration.Templating.xml",
@@ -6007,12 +6007,12 @@
         "lib/netstandard1.6/Microsoft.VisualStudio.Web.CodeGeneration.Templating.xml"
       ]
     },
-    "Microsoft.VisualStudio.Web.CodeGeneration.Tools/1.0.0-preview2-final": {
-      "sha512": "Qm9HVBgHV4jdRjCw8MCg+8cvkY/x8XShmhsTMYdfF9+83LLaxwBnPwntnDKWybeIa9dJTZ1K+ffQtt3zKfgzSQ==",
+    "Microsoft.VisualStudio.Web.CodeGeneration.Tools/1.0.0-preview2-update1": {
+      "sha512": "DwiKAeghnoyjC77CmvhbMMYRk4ZLVmsUWb/kl08aUIMykORkC1yJVu6vIIL9GIkClsUrqBIaxkZsMa6VP0/Xew==",
       "type": "package",
-      "path": "Microsoft.VisualStudio.Web.CodeGeneration.Tools/1.0.0-preview2-final",
+      "path": "Microsoft.VisualStudio.Web.CodeGeneration.Tools/1.0.0-preview2-update1",
       "files": [
-        "Microsoft.VisualStudio.Web.CodeGeneration.Tools.1.0.0-preview2-final.nupkg.sha512",
+        "Microsoft.VisualStudio.Web.CodeGeneration.Tools.1.0.0-preview2-update1.nupkg.sha512",
         "Microsoft.VisualStudio.Web.CodeGeneration.Tools.nuspec",
         "lib/net451/dotnet-aspnet-codegenerator.exe",
         "lib/net451/dotnet-aspnet-codegenerator.xml",
@@ -6023,12 +6023,12 @@
         "runtimes/win7-x86/lib/net451/dotnet-aspnet-codegenerator.exe"
       ]
     },
-    "Microsoft.VisualStudio.Web.CodeGeneration.Utils/1.0.0-preview2-final": {
-      "sha512": "FuenOwZaiidkU/PylN8DK9bTZTYlqudkDOcPUCdPGjn5kcwnPagwMT4pcZbep3b7iT0FaDDCXZyDMjnjLFHi+g==",
+    "Microsoft.VisualStudio.Web.CodeGeneration.Utils/1.0.0-preview2-update1": {
+      "sha512": "f+TpuJG6zmXWhRNLLVDCLh9C2sZ5xyG9LSmZOBtpSCADfmCy4PWbbWFowREif2vRYaGqboBBqtWGNlyC72Gk0g==",
       "type": "package",
-      "path": "Microsoft.VisualStudio.Web.CodeGeneration.Utils/1.0.0-preview2-final",
+      "path": "Microsoft.VisualStudio.Web.CodeGeneration.Utils/1.0.0-preview2-update1",
       "files": [
-        "Microsoft.VisualStudio.Web.CodeGeneration.Utils.1.0.0-preview2-final.nupkg.sha512",
+        "Microsoft.VisualStudio.Web.CodeGeneration.Utils.1.0.0-preview2-update1.nupkg.sha512",
         "Microsoft.VisualStudio.Web.CodeGeneration.Utils.nuspec",
         "lib/net451/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll",
         "lib/net451/Microsoft.VisualStudio.Web.CodeGeneration.Utils.xml",
@@ -6036,12 +6036,12 @@
         "lib/netstandard1.6/Microsoft.VisualStudio.Web.CodeGeneration.Utils.xml"
       ]
     },
-    "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/1.0.0-preview2-final": {
-      "sha512": "7Npb0ypZ0Ba1oCv7T5GWF+gJTmJz7b8VzvsysRQxhJFz0LgFx3hHu81cKj9/WYf9JBObkt8trwAwec3qrOytGQ==",
+    "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/1.0.0-preview2-update1": {
+      "sha512": "cK6NNWq1d1PBjzppM7gH/whM2Xg70b4iYA4wRATSl4YkrzdhGg1b/Mlwj+pY7ghfXGb+VVmCTrdKydqmTLn6sw==",
       "type": "package",
-      "path": "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/1.0.0-preview2-final",
+      "path": "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/1.0.0-preview2-update1",
       "files": [
-        "Microsoft.VisualStudio.Web.CodeGenerators.Mvc.1.0.0-preview2-final.nupkg.sha512",
+        "Microsoft.VisualStudio.Web.CodeGenerators.Mvc.1.0.0-preview2-update1.nupkg.sha512",
         "Microsoft.VisualStudio.Web.CodeGenerators.Mvc.nuspec",
         "THIRDPARTYNOTICE ASP.NET_Preview.rtf",
         "Templates/ControllerGenerator/ApiControllerWIthActions.cshtml",
@@ -11164,8 +11164,9 @@
       "Microsoft.AspNetCore.Server.IISIntegration >= 1.0.0",
       "Microsoft.AspNetCore.Server.Kestrel >= 1.0.1",
       "Microsoft.AspNetCore.StaticFiles >= 1.0.0",
+      "Microsoft.EntityFrameworkCore.Design >= 1.0.0-preview2-final",
       "Microsoft.EntityFrameworkCore.Sqlite >= 1.0.1",
-      "Microsoft.EntityFrameworkCore.Sqlite.Design >= 1.0.0",
+      "Microsoft.EntityFrameworkCore.Sqlite.Design >= 1.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 1.0.0-preview2-final",
       "Microsoft.Extensions.Configuration.CommandLine >= 1.0.0",
       "Microsoft.Extensions.Configuration.EnvironmentVariables >= 1.0.0",
@@ -11175,10 +11176,10 @@
       "Microsoft.Extensions.Logging.Console >= 1.0.0",
       "Microsoft.Extensions.Logging.Debug >= 1.0.0",
       "Microsoft.Extensions.Options.ConfigurationExtensions >= 1.0.0",
-      "Microsoft.NETCore.App >= 1.0.0",
+      "Microsoft.NETCore.App >= 1.0.1",
       "Microsoft.VisualStudio.Web.BrowserLink.Loader >= 14.0.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Tools >= 1.0.0-preview2-final",
-      "Microsoft.VisualStudio.Web.CodeGenerators.Mvc >= 1.0.0-preview2-final"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Tools >= 1.0.0-preview2-update1",
+      "Microsoft.VisualStudio.Web.CodeGenerators.Mvc >= 1.0.0-preview2-update1"
     ],
     ".NETCoreApp,Version=v1.0": []
   },
