@@ -61,7 +61,7 @@ target/
 #Ipython Notebook
 .ipynb_checkpoints
 
-#Pasta PyCharm
+#Pasta JetBrains
 *.idea
 
 #Pasta VS Code
@@ -69,3 +69,7 @@ target/
 
 #Banco
 *.sqlite3
+*.sqlite
+#Pastas
+
+*/Models
