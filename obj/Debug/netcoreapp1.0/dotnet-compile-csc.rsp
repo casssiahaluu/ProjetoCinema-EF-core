@@ -225,6 +225,7 @@
 -resource:"/home/halu/Git/ProjetoCinema-EF-core/obj/Debug/netcoreapp1.0/ProjetoCinema-EF-coredotnet-compile.deps.json",ProjetoCinema-EF-core.deps.json
 "/home/halu/Git/ProjetoCinema-EF-core/Startup.cs"
 "/home/halu/Git/ProjetoCinema-EF-core/Program.cs"
+"/home/halu/Git/ProjetoCinema-EF-core/Models/Model.cs"
 "/home/halu/Git/ProjetoCinema-EF-core/Models/ApplicationUser.cs"
 "/home/halu/Git/ProjetoCinema-EF-core/Models/ManageViewModels/AddPhoneNumberViewModel.cs"
 "/home/halu/Git/ProjetoCinema-EF-core/Models/ManageViewModels/SetPasswordViewModel.cs"
