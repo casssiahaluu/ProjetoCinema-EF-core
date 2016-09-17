@@ -70,6 +70,6 @@ target/
 #Banco
 *.sqlite3
 *.sqlite
-#Pastas
 
-*/Models
+#Pastas
+/Models
