@@ -1,9 +1,8 @@
 {
   "userSecretsId": "aspnet-ProjetoCinema-b02ed05b-33b5-46e1-b781-2a3a474946fb",
-
   "dependencies": {
     "Microsoft.NETCore.App": {
-      "version": "1.0.0",
+      "version": "1.0.1",
       "type": "platform"
     },
     "Microsoft.AspNetCore.Authentication.Cookies": "1.0.0",

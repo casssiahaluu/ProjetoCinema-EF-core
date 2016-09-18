@@ -16,7 +16,7 @@
     ".NETCoreApp,Version=v1.0": {
       "ProjetoCinema-EF-core/1.0.0": {
         "dependencies": {
-          "Microsoft.NETCore.App": "1.0.0",
+          "Microsoft.NETCore.App": "1.0.1",
           "Microsoft.AspNetCore.Authentication.Cookies": "1.0.0",
           "Microsoft.AspNetCore.Diagnostics": "1.0.0",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "1.0.0",
@@ -669,7 +669,7 @@
           "Microsoft.DotNet.ProjectModel.Loader": "1.0.0-preview2-003121",
           "Microsoft.Extensions.CommandLineUtils": "1.0.0",
           "Microsoft.Extensions.PlatformAbstractions": "1.0.0",
-          "Microsoft.NETCore.App": "1.0.0",
+          "Microsoft.NETCore.App": "1.0.1",
           "Newtonsoft.Json": "9.0.1",
           "System.Diagnostics.Process": "4.1.0",
           "System.Runtime.Serialization.Primitives": "4.1.1"
@@ -945,7 +945,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design.Core": "1.0.0-preview2-final",
           "Microsoft.Extensions.CommandLineUtils": "1.0.0",
-          "Microsoft.NETCore.App": "1.0.0"
+          "Microsoft.NETCore.App": "1.0.1"
         },
         "runtime": {
           "lib/netcoreapp1.0/Microsoft.EntityFrameworkCore.Design.dll": {}
@@ -1040,7 +1040,7 @@
           "Microsoft.DotNet.ProjectModel": "1.0.0-rc3-003121",
           "Microsoft.EntityFrameworkCore.Design": "1.0.0-preview2-final",
           "Microsoft.Extensions.CommandLineUtils": "1.0.0",
-          "Microsoft.NETCore.App": "1.0.0",
+          "Microsoft.NETCore.App": "1.0.1",
           "System.Runtime.InteropServices.RuntimeInformation": "4.0.0"
         },
         "runtime": {
@@ -1593,7 +1593,7 @@
       },
       "Microsoft.VisualStudio.Web.CodeGeneration.Tools/1.0.0-preview2-update1": {
         "dependencies": {
-          "Microsoft.NETCore.App": "1.0.0",
+          "Microsoft.NETCore.App": "1.0.1",
           "Microsoft.VisualStudio.Web.CodeGeneration": "1.0.0-preview2-update1"
         },
         "runtime": {
@@ -2262,14 +2262,14 @@
         },
         "compileOnly": true
       },
-      "Microsoft.NETCore.App/1.0.0": {
+      "Microsoft.NETCore.App/1.0.1": {
         "dependencies": {
           "Libuv": "1.9.0",
           "Microsoft.CSharp": "4.0.1",
           "Microsoft.CodeAnalysis.CSharp": "1.3.0",
           "Microsoft.CodeAnalysis.VisualBasic": "1.3.0",
           "Microsoft.NETCore.DotNetHostPolicy": "1.0.1",
-          "Microsoft.NETCore.Runtime.CoreCLR": "1.0.2",
+          "Microsoft.NETCore.Runtime.CoreCLR": "1.0.4",
           "Microsoft.VisualBasic": "10.0.1",
           "NETStandard.Library": "1.6.0",
           "System.Buffers": "4.0.0",
@@ -2323,15 +2323,15 @@
         },
         "compileOnly": true
       },
-      "Microsoft.NETCore.Jit/1.0.2": {
+      "Microsoft.NETCore.Jit/1.0.4": {
         "compileOnly": true
       },
       "Microsoft.NETCore.Platforms/1.0.1": {
         "compileOnly": true
       },
-      "Microsoft.NETCore.Runtime.CoreCLR/1.0.2": {
+      "Microsoft.NETCore.Runtime.CoreCLR/1.0.4": {
         "dependencies": {
-          "Microsoft.NETCore.Jit": "1.0.2",
+          "Microsoft.NETCore.Jit": "1.0.4",
           "Microsoft.NETCore.Windows.ApiSets": "1.0.1"
         },
         "compileOnly": true
@@ -4508,10 +4508,10 @@
       "serviceable": true,
       "sha512": "sha512-UsE83AQLMMHWLnvArexL+mXDQcx9NNmGRt20h+9uco25jxnkKEX4RXVv+d5zYI/LQpavVLZ36PFxR/qC9zn/ew=="
     },
-    "Microsoft.NETCore.App/1.0.0": {
+    "Microsoft.NETCore.App/1.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ciFk0rrxHVAPs9dPj2qH6uwzkobZI9jvodZwzvyVZAjCK4V8+7zgocSmIqh1KR5M2Wl3FQcBjd2J8Jys4VkXkw=="
+      "sha512": "sha512-1ZiTaAAc3Msi4siXtdVmallNCrFA5ZUzoGkIh4litHjBJBZcRgWvwRXT60woB5FpWPC9qDiTFc6L1Gr8EbOPog=="
     },
     "Microsoft.NETCore.DotNetHost/1.0.1": {
       "type": "package",
@@ -4528,20 +4528,20 @@
       "serviceable": true,
       "sha512": "sha512-RU1T8gr6qEZrF5tAmxY+OYOw++hIomhsTtAnZhN0V2F9R1gCWv6KGIWklg2LucF9Pe8J94BdPjSnjvsX5DrafA=="
     },
-    "Microsoft.NETCore.Jit/1.0.2": {
+    "Microsoft.NETCore.Jit/1.0.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-AwguLIwtGkS4daOThAdVjXZPIPwIHA4SxBIO/uFrW4Rtwn747zjkhx7KBR0bhHNf3sS2XAVAKO9fqc0vRtVWLA=="
+      "sha512": "sha512-s336ryZlopR+pQ4VfKlILX1LxiQzpCPnmiGot0p5aFPeCjwmKtHC88MI8jXdvdGPySON9i1bPUKJP8jiiPIAjA=="
     },
     "Microsoft.NETCore.Platforms/1.0.1": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-aOfmw9FBIBYiDkveIAzHpIHsuO2nFfQhKsW0GPIgJ1bwPomOulXWz6eySRmd17id6ZC59tJkRJWwiuWdMUwqXg=="
     },
-    "Microsoft.NETCore.Runtime.CoreCLR/1.0.2": {
+    "Microsoft.NETCore.Runtime.CoreCLR/1.0.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Raxcbr24kCsVX5+MhZAXKkjFzq16aN/9zQWDi8rVFKK5uqBeSO2VGs7vzTl6e7j4acPi7JEBtYMrQpOtXCbbXA=="
+      "sha512": "sha512-NTd+F7MQJi5wFh6Hq3uVH0L3om+pVcfF+bpw0hSd+Ka92QSZ4IfDJw/IWqTQ9jUtLyWYR4XR+52HD5HW+a+zoQ=="
     },
     "Microsoft.NETCore.Targets/1.0.1": {
       "type": "package",
