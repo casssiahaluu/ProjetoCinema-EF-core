@@ -8,9 +8,10 @@ using ConsoleApp.SQLite;
 namespace ProjetoCinemaEFcore.Migrations
 {
     [DbContext(typeof(Cinema))]
-    partial class CinemaModelSnapshot : ModelSnapshot
+    [Migration("20160928205611_MudandoDeLugar")]
+    partial class MudandoDeLugar
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.0.1");
