@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace ProjetoCinemaEFcore.Migrations
+namespace Cinema.Migrations
 {
-    public partial class MyFirstMigration : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -43,7 +43,7 @@ namespace ProjetoCinemaEFcore.Migrations
                     FilmeId = table.Column<int>(nullable: false)
                         .Annotation("Autoincrement", true),
                     AnoLancamento = table.Column<int>(nullable: false),
-                    CategoriasCategoriaId = table.Column<int>(nullable: true),
+                    CategoriaId = table.Column<int>(nullable: false),
                     Duracao = table.Column<int>(nullable: false),
                     Nome = table.Column<string>(nullable: true),
                     Sinopse = table.Column<string>(nullable: true)
@@ -52,11 +52,11 @@ namespace ProjetoCinemaEFcore.Migrations
                 {
                     table.PrimaryKey("PK_Filmes", x => x.FilmeId);
                     table.ForeignKey(
-                        name: "FK_Filmes_Categorias_CategoriasCategoriaId",
-                        column: x => x.CategoriasCategoriaId,
+                        name: "FK_Filmes_Categorias_CategoriaId",
+                        column: x => x.CategoriaId,
                         principalTable: "Categorias",
                         principalColumn: "CategoriaId",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -66,9 +66,9 @@ namespace ProjetoCinemaEFcore.Migrations
                     ExibicaoId = table.Column<int>(nullable: false)
                         .Annotation("Autoincrement", true),
                     Data = table.Column<string>(nullable: true),
-                    FilmeId = table.Column<int>(nullable: true),
+                    FilmeId = table.Column<int>(nullable: false),
                     Horario = table.Column<string>(nullable: true),
-                    SalaId = table.Column<int>(nullable: true)
+                    SalaId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -78,13 +78,13 @@ namespace ProjetoCinemaEFcore.Migrations
                         column: x => x.FilmeId,
                         principalTable: "Filmes",
                         principalColumn: "FilmeId",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Exibicoes_Salas_SalaId",
                         column: x => x.SalaId,
                         principalTable: "Salas",
                         principalColumn: "SalaId",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
@@ -98,9 +98,9 @@ namespace ProjetoCinemaEFcore.Migrations
                 column: "SalaId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Filmes_CategoriasCategoriaId",
+                name: "IX_Filmes_CategoriaId",
                 table: "Filmes",
-                column: "CategoriasCategoriaId");
+                column: "CategoriaId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

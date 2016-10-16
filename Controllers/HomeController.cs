@@ -2,12 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Cinema.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ProjetoCinema.Controllers
+namespace Cinema.Controllers
 {
     public class HomeController : Controller
     {
+        private ApplicationDbContext ctx = new ApplicationDbContext(); 
         public IActionResult Index()
         {
             return View();
@@ -30,6 +32,39 @@ namespace ProjetoCinema.Controllers
         public IActionResult Error()
         {
             return View();
+        }
+
+        /* ===#### Controllers ####=== */
+        public IActionResult CreateSala(){
+            var sala = new Sala{
+                Nome="Sala 01",
+                Capacidade=2,
+                TamanhoTela=100
+            };
+            ctx.Salas.Add(sala);
+            ctx.SaveChanges();
+
+            var exibicoes = new List<string>{
+                "Exibição 01", "Exibição 02", "Exibição 03" 
+            };
+
+            foreach (var exib in exibicoes)
+            {
+                var exibicao = new Exibicao{
+                    Sala=sala,
+                    Data="16/10/2016",
+                    Horario="14:00"
+                };
+                ctx.Exibicoes.Add(exibicao);
+                ctx.SaveChanges();
+            }
+
+            return RedirectToAction("ViewSala");
+        }
+
+        public IActionResult ViewSala(){
+            var sala = ctx.Salas.First();
+            return View(sala);
         }
     }
 }

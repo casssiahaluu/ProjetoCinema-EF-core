@@ -3,20 +3,19 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
-using ConsoleApp.SQLite;
+using CinemaDB.Models;
 
-namespace ProjetoCinemaEFcore.Migrations
+namespace Cinema.Migrations
 {
-    [DbContext(typeof(Cinema))]
-    [Migration("20160918234830_AlterandoBanco")]
-    partial class AlterandoBanco
+    [DbContext(typeof(ApplicationDbContext))]
+    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
             modelBuilder
-                .HasAnnotation("ProductVersion", "1.0.1");
+                .HasAnnotation("ProductVersion", "1.0.0-rtm-21431");
 
-            modelBuilder.Entity("ConsoleApp.SQLite.Categoria", b =>
+            modelBuilder.Entity("CinemaDB.Models.Categoria", b =>
                 {
                     b.Property<int>("CategoriaId")
                         .ValueGeneratedOnAdd();
@@ -28,18 +27,18 @@ namespace ProjetoCinemaEFcore.Migrations
                     b.ToTable("Categorias");
                 });
 
-            modelBuilder.Entity("ConsoleApp.SQLite.Exibicao", b =>
+            modelBuilder.Entity("CinemaDB.Models.Exibicao", b =>
                 {
                     b.Property<int>("ExibicaoId")
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("Data");
 
-                    b.Property<int?>("FilmeId");
+                    b.Property<int>("FilmeId");
 
                     b.Property<string>("Horario");
 
-                    b.Property<int?>("SalaId");
+                    b.Property<int>("SalaId");
 
                     b.HasKey("ExibicaoId");
 
@@ -50,14 +49,14 @@ namespace ProjetoCinemaEFcore.Migrations
                     b.ToTable("Exibicoes");
                 });
 
-            modelBuilder.Entity("ConsoleApp.SQLite.Filme", b =>
+            modelBuilder.Entity("CinemaDB.Models.Filme", b =>
                 {
                     b.Property<int>("FilmeId")
                         .ValueGeneratedOnAdd();
 
                     b.Property<int>("AnoLancamento");
 
-                    b.Property<int?>("CategoriasCategoriaId");
+                    b.Property<int>("CategoriaId");
 
                     b.Property<int>("Duracao");
 
@@ -67,12 +66,12 @@ namespace ProjetoCinemaEFcore.Migrations
 
                     b.HasKey("FilmeId");
 
-                    b.HasIndex("CategoriasCategoriaId");
+                    b.HasIndex("CategoriaId");
 
                     b.ToTable("Filmes");
                 });
 
-            modelBuilder.Entity("ConsoleApp.SQLite.Sala", b =>
+            modelBuilder.Entity("CinemaDB.Models.Sala", b =>
                 {
                     b.Property<int>("SalaId")
                         .ValueGeneratedOnAdd();
@@ -88,22 +87,25 @@ namespace ProjetoCinemaEFcore.Migrations
                     b.ToTable("Salas");
                 });
 
-            modelBuilder.Entity("ConsoleApp.SQLite.Exibicao", b =>
+            modelBuilder.Entity("CinemaDB.Models.Exibicao", b =>
                 {
-                    b.HasOne("ConsoleApp.SQLite.Filme", "Filme")
+                    b.HasOne("CinemaDB.Models.Filme", "Filme")
                         .WithMany("Exibicoes")
-                        .HasForeignKey("FilmeId");
+                        .HasForeignKey("FilmeId")
+                        .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("ConsoleApp.SQLite.Sala", "Sala")
+                    b.HasOne("CinemaDB.Models.Sala", "Sala")
                         .WithMany("Exibicoes")
-                        .HasForeignKey("SalaId");
+                        .HasForeignKey("SalaId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("ConsoleApp.SQLite.Filme", b =>
+            modelBuilder.Entity("CinemaDB.Models.Filme", b =>
                 {
-                    b.HasOne("ConsoleApp.SQLite.Categoria", "Categorias")
+                    b.HasOne("CinemaDB.Models.Categoria", "Categorias")
                         .WithMany("Filmes")
-                        .HasForeignKey("CategoriasCategoriaId");
+                        .HasForeignKey("CategoriaId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
         }
     }
