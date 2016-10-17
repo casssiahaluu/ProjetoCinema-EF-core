@@ -1,7 +1,5 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Cinema.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -61,7 +59,6 @@ namespace Cinema.Controllers
 
             return RedirectToAction("ViewSala");
         }
-
         public IActionResult ViewSala(){
             var sala = ctx.Salas.First();
             return View(sala);
