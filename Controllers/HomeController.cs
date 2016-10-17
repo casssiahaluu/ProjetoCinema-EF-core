@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Cinema.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Cinema.Controllers
 {
@@ -60,7 +61,7 @@ namespace Cinema.Controllers
             return RedirectToAction("ViewSala");
         }
         public IActionResult ViewSala(){
-            var sala = ctx.Salas.First();
+            var sala = ctx.Salas.Include(c => c.Exibicoes).First();
             return View(sala);
         }
     }
