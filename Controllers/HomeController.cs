@@ -33,17 +33,18 @@ namespace Cinema.Controllers
         }
 
         /* ===#### TODO: Controllers ####=== */
-        [HttpPostAttribute]
-        [ValidateAntiForgeryToken]
-        public IActionResult CreateSala(Sala sala){
+        
+        public IActionResult CreateSala(Sala sala)
+        {
             if(ModelState.IsValid){
                 ctx.Salas.Add(sala);
                 ctx.SaveChanges();
                 return RedirectToAction("ViewSala");
             }
-            return View(sala);
+            return View("CreateSala");
         }
-        public IActionResult ViewSala(){
+        public IActionResult ViewSala()
+        {
             var sala = ctx.Salas.Include(c => c.Exibicoes);
             return View(sala);
         }
