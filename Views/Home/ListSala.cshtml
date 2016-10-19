@@ -1,0 +1,12 @@
+@model Cinema.Models.Sala
+
+@{
+    ViewData["Title"] = "Salas";
+}
+<h2>@Model.Nome</h2>
+<ul>
+    @foreach (var exibicao in @Model.Exibicoes)
+    {
+        <li>@exibicao.Nome</li>
+    }
+</ul>

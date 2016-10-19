@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using System.Linq;
 using Cinema.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -34,34 +33,18 @@ namespace Cinema.Controllers
         }
 
         /* ===#### TODO: Controllers ####=== */
-        public IActionResult CreateSala(){
-            var sala = new Sala{
-                Nome="Sala 01",
-                Capacidade=2,
-                TamanhoTela=100
-            };
-            ctx.Salas.Add(sala);
-            ctx.SaveChanges();
-
-            var exibicoes = new List<string>{
-                "Exibição 01", "Exibição 02", "Exibição 03" 
-            };
-
-            foreach (var exib in exibicoes)
-            {
-                var exibicao = new Exibicao{
-                    Sala=sala,
-                    Data="16/10/2016",
-                    Horario="14:00"
-                };
-                ctx.Exibicoes.Add(exibicao);
+        [HttpPostAttribute]
+        [ValidateAntiForgeryToken]
+        public IActionResult CreateSala(Sala sala){
+            if(ModelState.IsValid){
+                ctx.Salas.Add(sala);
                 ctx.SaveChanges();
+                return RedirectToAction("ViewSala");
             }
-
-            return RedirectToAction("ViewSala");
+            return View(sala);
         }
         public IActionResult ViewSala(){
-            var sala = ctx.Salas.Include(c => c.Exibicoes).First();
+            var sala = ctx.Salas.Include(c => c.Exibicoes);
             return View(sala);
         }
     }

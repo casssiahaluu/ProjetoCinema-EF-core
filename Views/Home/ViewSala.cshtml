@@ -1,12 +1,34 @@
-@model Cinema.Models.Sala
+@model IEnumerable<Cinema.Models.Sala>
 
 @{
-    ViewData["Title"] = "Salas";
+    ViewBag.Title = "Listar Salas";
 }
-<h2>@Model.Nome</h2>
-<ul>
-    @foreach (var exibicao in @Model.Exibicoes)
+
+<h2>@ViewData["Title"]</h2>
+
+<p>
+    <a asp-controller="Home" asp-action="CreateSala">Cadastrar Nova</a>
+</p>
+
+<table class="table">
+    <tr>
+        <th>Nome</th>
+        <th>Capacidade</th>
+        <th>Tamanho da Tela</th>
+    </tr>
+
+    @foreach (var item in Model)
     {
-        <li>@exibicao.Nome</li>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Capacidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TamanhoTela)
+            </td>
+        </tr>
     }
-</ul>
+</table>
