@@ -43,9 +43,9 @@ namespace Cinema.Controllers
             }
             catch (DbUpdateException /* ex */)
             {
-                ModelState.AddModelError("", "Unable to save changes. " +
-                "Try again, and if the problem persists, " +
-                "see your system administrator.");
+                ModelState.AddModelError("", "Impossível salvar. " +
+                "Tente novamente, se o problema persistir, " +
+                "contate o administrador.");
             }
             return View("CreateSala");
         }
