@@ -33,13 +33,19 @@ namespace Cinema.Controllers
         }
 
         /* ===#### TODO: Controllers ####=== */
-        
         public IActionResult CreateSala(Sala sala)
         {
-            if(ModelState.IsValid){
-                ctx.Salas.Add(sala);
-                ctx.SaveChanges();
-                return RedirectToAction("ViewSala");
+            try{
+                if(ModelState.IsValid && sala != null){
+                    ctx.Salas.Add(sala);
+                    ctx.SaveChanges();
+                }
+            }
+            catch (DbUpdateException /* ex */)
+            {
+                ModelState.AddModelError("", "Unable to save changes. " +
+                "Try again, and if the problem persists, " +
+                "see your system administrator.");
             }
             return View("CreateSala");
         }
